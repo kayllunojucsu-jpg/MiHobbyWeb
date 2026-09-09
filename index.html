@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Apuntología XP</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Aplicación -->
+  <main id="app">
+    <header class="navbar">
+      <div class="logo">
+        APUNTOLOGÍA XP
+      </div>
+      <nav>
+        <a href="#inicio">INICIO</a>
+        <a href="#registros">REGISTROS</a>
+        <a href="#nuevo">NUEVO_REGISTRO</a>
+        <a href="#admin">CONSOLA_ADMIN</a>
+      </nav>
+    </header>
+
+    <!-- Portada -->
+    <section id="inicio" class="hero">
+      <p class="status">DATABASE STATUS: ONLINE</p>
+      <h1>APUNTOLOGÍA XP</h1>
+      <h3>Sistema de apuntes activo.</h3>
+    </section>
+
+    <!-- Nuevo Registro -->
+    <section id="nuevo">
+  <h2>Nuevo Registro</h2>
+  <textarea id="campoNota" rows="6" cols="50" placeholder="Escribe tu nota aquí..."></textarea>
+  <br>
+  <button id="btnGuardar" class="btn">Guardar Nota</button>
+  <br><br>
+  <!-- Botón de login -->
+  <button id="loginBtn">Iniciar sesión con Google</button>
+<p id="usuario"></p>
+</section>
+
+<!-- Galería -->
+  <section id="galeria">
+    <h2>Galería de Apuntes</h2>
+    <div class="galeria">
+      <div class="card">
+        <img src="images/apunte1.png" alt="Apunte 1">
+        <h3>Apunte Matemáticas</h3>
+        <p>Ejemplo de derivadas paso a paso.</p>
+      </div>
+      <div class="card">
+        <img src="images/apunte2.png" alt="Apunte 2">
+        <h3>Apunte Estadística</h3>
+        <p>Probabilidad con ejemplos prácticos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+
+<section id="contacto">
+  <h2>Formulario de Contacto</h2>
+  <form id="formContacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+  </section>
+
+<div class="matrix-rain">010101010101010101010101</div>
+
+    <!-- Registros -->
+    <section id="registros">
+      <h2>Registros</h2>
+      <ul id="listaNotas"></ul>
+    </section>
+  </main>
+
+  <canvas id="matrixCanvas"></canvas>
+<script src="matrix.js"></script>
+
+
+<!-- Mi script modular -->
+<script type="module" src="script.js"></script>
+</body>
+</html>
